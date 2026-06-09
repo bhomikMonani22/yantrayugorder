@@ -27,16 +27,16 @@ const admin = createClient(URL, SERVICE_KEY, {
 });
 
 const USERS = [
-  { email: 'admin@shrinathji.test',    password: 'Admin@12345',    role: 'admin',
+  { email: 'admin@yantrayug.test',    password: 'Admin@12345',    role: 'admin',
     shop_name: 'Shrinath Ji HQ',        contact_name: 'Admin',         city: 'Pune' },
-  { email: 'retailer1@shrinathji.test', password: 'Retail@12345',   role: 'retailer',
+  { email: 'retailer1@yantrayug.test', password: 'Retail@12345',   role: 'retailer',
     shop_name: 'Balaji Auto Spares',    contact_name: 'Suresh',  phone: '9890011223',
     gstin: '27ABCDE1234F1Z5',           city: 'Pune' },
-  { email: 'retailer2@shrinathji.test', password: 'Retail@12345',   role: 'retailer',
+  { email: 'retailer2@yantrayug.test', password: 'Retail@12345',   role: 'retailer',
     shop_name: 'Mahalaxmi Motor Parts', contact_name: 'Ramesh', phone: '9822033445',
     gstin: '27FGHIJ5678K1Z2',           city: 'Pimpri-Chinchwad' },
   // A warehouse operator for the fulfilment desk.
-  { email: 'warehouse@shrinathji.test', password: 'Wh@12345',       role: 'warehouse',
+  { email: 'warehouse@yantrayug.test', password: 'Wh@12345',       role: 'warehouse',
     shop_name: 'Main Warehouse',        contact_name: 'Store Desk',    city: 'Pune' },
 ];
 

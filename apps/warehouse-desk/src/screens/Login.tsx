@@ -64,7 +64,7 @@ export function Login() {
             {busy ? 'Signing in…' : 'Sign in'}
           </Button>
           <p className="mt-8 text-center text-xs text-inkSoft">
-            Demo: warehouse@shrinathji.test · Wh@12345
+            Demo: warehouse@yantrayug.test · Wh@12345
           </p>
           <p className="mt-2 text-center text-[10px] text-inkSoft/70">{CONFIG.developedBy}</p>
         </div>

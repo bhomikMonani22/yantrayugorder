@@ -45,10 +45,10 @@ To re-create elsewhere: run the migration, then `node supabase/seed.mjs` with
 ### Seeded logins
 | Role      | Email                        | Password      |
 |-----------|------------------------------|---------------|
-| admin     | admin@shrinathji.test        | Admin@12345   |
-| retailer  | retailer1@shrinathji.test    | Retail@12345  |
-| retailer  | retailer2@shrinathji.test    | Retail@12345  |
-| warehouse | warehouse@shrinathji.test    | Wh@12345      |
+| admin     | admin@yantrayug.test        | Admin@12345   |
+| retailer  | retailer1@yantrayug.test    | Retail@12345  |
+| retailer  | retailer2@yantrayug.test    | Retail@12345  |
+| warehouse | warehouse@yantrayug.test    | Wh@12345      |
 
 ---
 
@@ -92,8 +92,8 @@ npm run dev      # http://localhost:5173
 npm run build
 ```
 
-`.env` is pre-filled (same Supabase project). Sign in with `warehouse@shrinathji.test` / `Wh@12345`
-(staff). The admin catalogue tab (add/edit/CSV import) appears only for `admin@shrinathji.test`.
+`.env` is pre-filled (same Supabase project). Sign in with `warehouse@yantrayug.test` / `Wh@12345`
+(staff). The admin catalogue tab (add/edit/CSV import) appears only for `admin@yantrayug.test`.
 
 Live orders board subscribes to `sj_orders` realtime — orders placed in the PWA appear instantly.
 Open an order → pick list with bin locations → enter an invoice number → the DB trigger closes it.
