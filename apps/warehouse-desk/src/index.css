@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0; background: #FAF6F0; color: #1E1E1E;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+@layer utilities {
+  .text-sunset {
+    background: linear-gradient(135deg,#FF8C42 0%,#FF5E7E 50%,#B57BFF 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+}
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(44,42,41,0.15); border-radius: 8px; }

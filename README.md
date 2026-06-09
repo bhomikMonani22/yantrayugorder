@@ -83,6 +83,25 @@ unavailable → manual part-no entry feeds the same parse/search path.
 rather than loading all parts client-side — required at 7,664 parts and scales to 32k+.
 The app shell installs and runs offline; catalogue search needs a connection.
 
+## Run the Warehouse Desk locally
+
+```bash
+cd apps/warehouse-desk
+npm install
+npm run dev      # http://localhost:5173
+npm run build
+```
+
+`.env` is pre-filled (same Supabase project). Sign in with `warehouse@shrinathji.test` / `Wh@12345`
+(staff). The admin catalogue tab (add/edit/CSV import) appears only for `admin@shrinathji.test`.
+
+Live orders board subscribes to `sj_orders` realtime — orders placed in the PWA appear instantly.
+Open an order → pick list with bin locations → enter an invoice number → the DB trigger closes it.
+
+### Deploy the Warehouse Desk to Vercel
+Add it as a **separate Vercel project** from the same repo, with **Root Directory = `apps/warehouse-desk`**.
+Vite is auto-detected; `.env` carries the Supabase keys; `vercel.json` handles SPA routing.
+
 ---
 
 ## Build status
@@ -90,7 +109,7 @@ The app shell installs and runs offline; catalogue search needs a connection.
 - [x] **Phase 1** — Supabase schema, RLS, realtime, auto-closer trigger, seed — **applied + verified live (`sj_` parallel)**
 - [x] **Phase 2** — `parseHeroQR` + tests, shared design tokens
 - [x] **Phase 3** — Retailer PWA (auth → catalogue → scan → basket → order → status), iPhone-first — typechecks + builds clean
-- [ ] **Phase 4** — Warehouse desk (live orders → pick → invoice/close → admin catalogue + CSV import)
-- [ ] **Phase 5** — Realtime wiring retailer → warehouse
-- [ ] **Phase 6** — Soft Tech polish pass
-- [ ] **Phase 7** — Deploy both apps to Vercel (needs Supabase creds + Vercel token)
+- [x] **Phase 4** — Warehouse desk (live orders → pick → invoice/close → admin catalogue + CSV import) — typechecks + builds, joins verified live
+- [x] **Phase 5** — Realtime wiring retailer → warehouse (board subscribes to `sj_orders`)
+- [x] **Phase 6** — Soft Tech polish pass
+- [~] **Phase 7** — Deploy to Vercel: retailer PWA live; warehouse desk ready to deploy
