@@ -6,9 +6,10 @@ export const BRANDS = ['HERO', 'HONDA', 'SUZUKI', 'TVS'] as const;
 export type Brand = (typeof BRANDS)[number];
 
 export const CONFIG = {
-  businessName: 'Shrinath Ji Enterprises',
-  shortName: 'Shrinath Ji',
+  businessName: 'Yantrayug Hero Hub',
+  shortName: 'Yantrayug',
   tagline: 'Retailer Ordering Platform',
+  developedBy: 'Developed by Shreenathji Enterprises',
   brands: BRANDS,
   currency: '₹',
   // brand chip tints (Soft Tech functional pastels)

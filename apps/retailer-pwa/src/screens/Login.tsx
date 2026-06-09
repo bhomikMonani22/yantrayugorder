@@ -68,6 +68,9 @@ export function Login() {
         <p className="mt-8 text-center text-xs text-inkSoft">
           Demo: retailer1@shrinathji.test · Retail@12345
         </p>
+        <p className="mt-2 text-center text-[10px] tracking-wide text-inkSoft/70">
+          {CONFIG.developedBy}
+        </p>
       </div>
     </div>
   );

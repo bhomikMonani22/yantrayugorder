@@ -9,8 +9,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['apple-touch-icon-180.png', 'favicon.svg'],
       manifest: {
-        name: 'Shrinath Ji — Retailer Ordering',
-        short_name: 'Shrinath Ji',
+        name: 'Yantrayug Hero Hub — Retailer Ordering',
+        short_name: 'Yantrayug',
         description: 'Scan or search parts and place orders.',
         theme_color: '#FAF6F0',
         background_color: '#FAF6F0',

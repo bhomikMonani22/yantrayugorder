@@ -1,8 +1,8 @@
 /**
- * Seed script for Shrinath Ji Enterprises ordering platform.
+ * Seed script for Yantrayug Hero Hub ordering platform.
  *
  * Creates:
- *   - 1 distributor (Shrinath Ji Enterprises)
+ *   - 1 distributor (Yantrayug Hero Hub)
  *   - 1 admin user, 2 retailer users (auth users + profiles)
  *   - ~30 parts across HERO / HONDA / SUZUKI / TVS
  *
@@ -103,10 +103,10 @@ async function main() {
   console.log('→ Upserting distributor…');
   // One canonical distributor by name.
   let { data: dist } = await admin
-    .from('sj_distributors').select('*').eq('name', 'Shrinath Ji Enterprises').maybeSingle();
+    .from('sj_distributors').select('*').eq('name', 'Yantrayug Hero Hub').maybeSingle();
   if (!dist) {
     const ins = await admin.from('sj_distributors')
-      .insert({ name: 'Shrinath Ji Enterprises' }).select().single();
+      .insert({ name: 'Yantrayug Hero Hub' }).select().single();
     if (ins.error) throw ins.error;
     dist = ins.data;
   }
