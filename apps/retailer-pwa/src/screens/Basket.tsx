@@ -60,7 +60,7 @@ export function Basket() {
   }
 
   return (
-    <div className="screen pb-[180px]">
+    <div className="screen pb-[240px]">
       <Header />
       <div className="space-y-2.5 px-4 pt-3">
         {lines.map((l) => (
@@ -90,7 +90,7 @@ export function Basket() {
       </div>
 
       {/* sticky checkout bar — thumb zone */}
-      <div className="fixed inset-x-0 bottom-0 z-30 mx-auto max-w-md border-t border-ink/5 bg-bg/95 px-4 pb-safe pt-3 backdrop-blur">
+      <div className="fixed inset-x-0 z-30 mx-auto max-w-md border-t border-ink/5 bg-bg/95 px-4 pb-3 pt-3 backdrop-blur" style={{ bottom: 'calc(64px + env(safe-area-inset-bottom))' }}>
         <div className="mb-2 flex items-end justify-between">
           <span className="text-sm text-inkSoft">{count} item{count !== 1 ? 's' : ''}</span>
           <span className="font-display text-3xl text-sunset">{money(total)}</span>
